@@ -53,3 +53,32 @@ print(spelProgramma(spelList))
 print(spelProgramma(spelList,1))
 print(spelProgramma(spelList,1,3))
 ```
+## F1.6.01.L1 
+``` python
+import random
+aantalM = int(input("Hoeveel kleuren M&M's moet er worden toegevoegd aan de zak?\n"))
+color = ["oranje", "blauw", "groen", "bruin"]
+orange = 0
+blue = 0
+green = 0
+brown = 0
+def mm(aantal):
+    global orange
+    global blue
+    global green
+    global brown
+    m = 1 
+    while m <= aantal:
+        colorM = random.choice(color)
+        if colorM == "oranje":
+            orange += 1
+        elif colorM == "blauw":
+            blue += 1
+        elif colorM == "groen":
+            green += 1
+        elif colorM == "bruin":
+            brown += 1
+        m +=1
+    print ("Inhoud van de zak: \n oranje: ", str(orange), "\n blauw: ", str(blue), "\n groen: ", str(green), "\n bruin: ", str(brown))
+mm(aantalM)
+```
