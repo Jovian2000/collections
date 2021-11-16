@@ -14,6 +14,7 @@ def mnm(amount):
             theBag.update({randomColor : 1})
 # Met update maakt hij een nieuwe key in de dictionary theBag
     return theBag
-print(sorted(mnm(amountMnM).items()))
-# .items zorgt ervoor dat hij de dictionary kan uitprinten, sorted zorgt ervoor dat het op alfabetische volgerde staat
+print(sorted(mnm(amountMnM).items(), key=lambda kv: kv[1], reverse=True))
+# .items zorgt ervoor dat hij de value uit print van de keys, sorted zorgt ervoor dat het op alfabetische volgerde staat
+# key=lambda kv: kv[1], reverse=True zorgt ervoor dat hij van groot naar klein uitprint
 
