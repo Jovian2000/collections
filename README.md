@@ -101,6 +101,6 @@ def mnm(amount):
 # Met update maakt hij een nieuwe key in de dictionary theBag
     return theBag
 print(sorted(mnm(amountMnM).items()))
-# .items zorgt ervoor dat hij de dictionary kan uitprinten, sorted zorgt ervoor dat het op alfabetische volgerde staat
+# .items zorgt ervoor dat hij de value uit print van de keys, sorted zorgt ervoor dat het op alfabetische volgerde staat
 ``` 
 
